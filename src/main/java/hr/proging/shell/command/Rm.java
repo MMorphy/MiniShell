@@ -30,6 +30,7 @@ public class Rm extends CommandBase {
 					return null;
 				} else {
 					NoteDB.deleteNoteForFile(new File(CommandBase.getCurrentDir() + "\\" + args[0]));
+					NoteDB.remoteNote(NoteDB.findNoteByNote(args[0]));
 				}
 			}
 		} catch (Exception e) {

@@ -26,7 +26,6 @@ public class MiniShell {
 				continue;
 			}
 			parser.parse(currentInput);
-			System.out.println(NoteDB.notes);
 		}
 	}
 }
